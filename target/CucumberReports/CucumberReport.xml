@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="19.332" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-05T13:34:09.994022300Z">
+<testcase classname="Search Functionality" name="Search for a valid product" time="6.634">
+<system-out><![CDATA[
+Given User open the application.............................................passed
+When User enters valid product "HP" into the search field...................passed
+And Clicks the search button................................................passed
+Then valid product should get displayed in search results...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Search for non-existing product" time="6.497">
+<system-out><![CDATA[
+Given User open the application.............................................passed
+When User enters non-existing product "Honda" into the search field.........passed
+And Clicks the search button................................................passed
+Then proper text informing the user about no product matching should be displayed.passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Search without providing any product" time="5.951">
+<system-out><![CDATA[
+Given User open the application.............................................passed
+When User dont enter any product into the search field......................passed
+And Clicks the search button................................................passed
+Then proper text informing the user about no product matching should be displayed.passed
+]]></system-out>
+</testcase>
+</testsuite>
